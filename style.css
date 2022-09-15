@@ -15,13 +15,38 @@ body {
     padding: 30px;
 }
 
+/* screenCSS */
 .screen {
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
     width: 500px;
     height: 320px;
     border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
 }
 
+.d-1 {
+    flex: 1;
+    display: flex;
+}
+
+.d-1--left {
+    flex: 1;
+}
+
+.d-1--right {
+    width: 90px;
+}
+
+.d-2 {
+    height: 50px;
+    font-size: 14px;
+    padding-left: 10px;
+    border-top: 2px solid #000;
+}
+/* screenCSS */
+
+/* keyboardCSS */
 .keyboard {
     background-color: #403A3A;
     margin-left: 30px;
@@ -57,12 +82,14 @@ body {
     background-color: #FFF;
     color: #000;
     font-size: 15px;
+    text-transform: uppercase;
 }
 
 .btn--revise {
     background-color: #F09046;
     color: #000;
     font-size: 15px;
+    text-transform: uppercase;
 }
 
 .btn--confirm {
@@ -71,4 +98,6 @@ body {
     font-size: 15px;
     width: 90px;
     height: 50px;
+    text-transform: uppercase;
 }
+/* keyboardCSS */
