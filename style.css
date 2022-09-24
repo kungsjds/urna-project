@@ -81,6 +81,13 @@ body {
     flex: 1;
     line-height: 30px;
 }
+.d-1--left-4--nullWhite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
 
 .d-1--right {
     width: 90px;
@@ -97,7 +104,7 @@ body {
 .d-1--right-image img {
     width: 100%;
 }
-.d-1--right-image.vice {
+.d-1--right-image.deputy {
     width: 80%;
     font-size: 12px;
 }
@@ -107,6 +114,16 @@ body {
     font-size: 14px;
     padding-left: 10px;
     border-top: 2px solid #000;
+}
+
+
+.end-vote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 70px;
+    font-weight: bold;
 }
 /* screenCSS */
 
@@ -145,14 +162,14 @@ body {
 .btn--white {
     background-color: #FFF;
     color: #000;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
-.btn--revise {
+.btn--redo {
     background-color: #F09046;
     color: #000;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 

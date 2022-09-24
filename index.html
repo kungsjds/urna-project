@@ -1,72 +1,77 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Urna Eletrônica</title>
-</head>
-<body>
-    <div class="urna">
-        <div class="screen">
-            <div class="d-1">
-                <div class="d-1--left">
-                    <div class="d-1--left-1">
-                        <span>SEU VOTO PARA</span>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <title>Urna Eletrônica</title>
+    </head>
+    <body>
+        <div class="urna">
+            <div class="screen">
+                <div class="d-1">
+                    <div class="d-1--left">
+                        <div class="d-1--left-1">
+                            <span>SEU VOTO PARA</span>
+                        </div>
+                        <div class="d-1--left-2">
+                            <span>VEREADOR</span>
+                        </div>
+                        <div class="d-1--left-3">
+                            <div class="d-1--left-3--number tic"></div>
+                            <div class="d-1--left-3--number"></div>
+                        </div>
+                        <div class="d-1--left-4">
+                            Nome: FULANO DE TAL<br/>
+                            Partido: QQQ<br/>
+                            Vice-Prefeito: BELTRANO DE TAL
+                        </div>
                     </div>
-                    <div class="d-1--left-2">
-                        <span>VEREADOR</span>
-                    </div>
-                    <div class="d-1--left-3">
-                        <div class="d-1--left-3--number tic"></div>
-                        <div class="d-1--left-3--number"></div>
-                    </div>
-                    <div class="d-1--left-4">
-                        Nome: FULANO DE TAL<br/>
-                        Partido: QQQ<br/>
-                        Vice-Prefeito: BELTRANO DE TAL
+                    <div class="d-1--right">
+                        <div class="d-1--right-image">
+                            <img src="images/84.jpg" alt="" />
+                            Prefeito
+                        </div>
+                        <div class="d-1--right-image deputy">
+                            <img src="images/84_2.jpg" alt="" />
+                            Vice-Prefeito
+                        </div>
                     </div>
                 </div>
-                <div class="d-1--right">
-                    <div class="d-1--right-image">
-                        <img src="images/84.jpg" alt="" />
-                        Prefeito
-                    </div>
-                    <div class="d-1--right-image vice">
-                        <img src="images/84_2.jpg" alt="" />
-                        Vice-Prefeito
-                    </div>
+                <div class="d-2">
+                    Aperte a tecla:<br/>
+                    CONFIRMA para CONFIRMAR este voto<br/>
+                    CORRIGE para REINICIAR este voto
                 </div>
             </div>
-            <div class="d-2">
-                Aperte a tecla:<br/>
-                CONFIRMA para CONFIRMAR este voto<br/>
-                CORRIGE para REINICIAR este voto
+            <div class="keyboard">
+                <div class="keyboard--line">
+                    <div class="keyboard--button" onclick="pressed('1')">1</div>
+                    <div class="keyboard--button" onclick="pressed('2')">2</div>
+                    <div class="keyboard--button" onclick="pressed('3')">3</div>                
+                </div>
+                <div class="keyboard--line">
+                    <div class="keyboard--button" onclick="pressed('4')">4</div>
+                    <div class="keyboard--button" onclick="pressed('5')">5</div>
+                    <div class="keyboard--button" onclick="pressed('6')">6</div>
+                </div>
+                <div class="keyboard--line">
+                    <div class="keyboard--button" onclick="pressed('7')">7</div>
+                    <div class="keyboard--button" onclick="pressed('8')">8</div>
+                    <div class="keyboard--button" onclick="pressed('9')">9</div>
+                </div>
+                <div class="keyboard--line">
+                    <div class="keyboard--button" onclick="pressed('0')">0</div>
+                </div>
+                <div class="keyboard--line">
+                    <div class="keyboard--button btn--white" onclick="white()">Branco</div>
+                    <div class="keyboard--button btn--redo" onclick="redo()">Corrige</div>
+                    <div class="keyboard--button btn--confirm" onclick="confirm()">Confirma</div>
+                </div>
             </div>
         </div>
-        <div class="keyboard">
-            <div class="keyboard--line">
-                <div class="keyboard--button">1</div>
-                <div class="keyboard--button">2</div>
-                <div class="keyboard--button">3</div>                
-            </div>
-            <div class="keyboard--line">
-                <div class="keyboard--button">4</div>
-                <div class="keyboard--button">5</div>
-                <div class="keyboard--button">6</div>
-            </div>
-            <div class="keyboard--line">
-                <div class="keyboard--button">7</div>
-                <div class="keyboard--button">8</div>
-                <div class="keyboard--button">9</div>
-            </div>
-            <div class="keyboard--line">
-                <div class="keyboard--button">0</div>
-            </div>
-            <div class="keyboard--line">
-                <div class="keyboard--button btn--white">Branco</div>
-                <div class="keyboard--button btn--revise">Corrige</div>
-                <div class="keyboard--button btn--confirm">Confirma</div>
-            </div>
-        </div>
-    </div>
-</body>
+
+        <script src="phases.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
